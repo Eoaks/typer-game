@@ -1,0 +1,62 @@
+body {
+    background-color: #e6e6e6;
+    font-family: Roboto, arial;
+    font-size: 16px;
+}
+h1, h4, p {
+    color: #333;
+}
+#text {
+    width: 280px;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 0px;
+}
+:focus {
+    outline: 0;
+}
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    min-width: 480px;
+    width: 60%;
+    margin: 0 auto;
+}
+.right-side {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.right-side > div{
+    text-align: center;
+    margin: 0 auto;
+}
+#score-modal{
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#modal-content{
+    width: 280px;
+    margin: 25vh auto;
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    transition: display 2s;
+}
+.right-side > div >  h1{
+    white-space: nowrap;
+}
+h4{
+    display: flex;
+}
+#current-word{
+    width: 40%;
+}
+#next-word {
+    color: #707070;
+}

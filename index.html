@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="words.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Typer Game</title>
+</head>
+
+<body>
+    <noscript>You need to enable javascript to play this game!</noscript>
+    <div class="content-wrapper">
+        <div class="left-side">
+            <h1>Typer Game</h1>
+            <p>Type the correct words until you're out of time.</p>
+            <div class="input-container">
+                <h4>
+                    <span id="current-word"></span>
+                    <span id="next-word"></span>
+                </h4>
+                <input oninput="handleInput(event)" type="text" name="text" id="text">
+            </div>
+        </div>
+        <div class="right-side">
+            <div>
+                <h1>Score</h1>
+                <h1 id="word-count">0</h1>
+            </div>
+            <div>
+                <h1>Time</h1>
+                <h1 id="timer">30</h1>
+            </div>
+            <div>
+                <h1>High Score</h1>
+                <h1 id=highscore>0</h1>
+            </div>
+        </div>
+    </div>
+    <div id="score-modal" style="display: none">
+        <div id="modal-content">
+            <h1>Your score:</h1>
+            <h1 id="score"></h1>
+            <button onclick="replay()">replay</button>
+        </div>
+    </div>
+</body>
+
+</html>
